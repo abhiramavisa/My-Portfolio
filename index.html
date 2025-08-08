@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ABHIRAM'S-Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Smooth open/close animation for mobile dropdowns */
+    .about-mobile-dropdowns details {
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .about-mobile-dropdowns details[open] {
+      max-height: 500px;
+    }
+    .about-mobile-dropdowns summary {
+      list-style: none;
+    }
+    .about-mobile-dropdowns summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+      <i class="fas fa-bars" id="menu-icon" onclick="toggleMenu()"></i>
+      <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#services">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <h1>Hi, I'm <span>Abhiram</span></h1>
+      <p>Data Scientist</p>
+    </div>
+  </div>
+</div>
+
+<div id="about">
+  <div class="container about-container">
+    <div class="about-left">
+      <h1 class="sub-title">About Me</h1>
+      <p class="about-text">
+        I'm Abhiram, a data analyst who is enthusiastic about using data to find insights and create solutions. 
+        My work focuses on machine learning, Python-powered analysis, and building dynamic dashboards that simplify 
+        complex data. I've designed end-to-end machine learning workflows and produced interactive visualizations 
+        that facilitate actual decision-making. I guarantee effective data handling from source to insight because 
+        I have a strong grasp of SQL and database technologies. Curiosity and a willingness to use data to address 
+        practical issues are what motivate me.
+      </p>
+    </div>
+
+    <div class="about-right">
+      <!-- Desktop Tabs -->
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="openTab('achievements')">Achievements</p>
+        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+        <p class="tab-links" onclick="openTab('education')">Education</p>
+      </div>
+
+      <div class="tab-contents active-tab fade-in" id="achievements">
+        <ul class="custom-list">
+          <li>Winner of Datahack hackathon conducted by VCE 2025</li>
+          <li>Organized an event named “Ideathon” as a part of “Festronix” conducted by VCE, 2024</li>
+          <li>Held positions such as Event Organizer and Class Representative.</li>
+        </ul>
+      </div>
+
+      <div class="tab-contents" id="experience">
+        <ul class="custom-list">
+          <li>Online Intern in “Artificial Intelligence and Machine Learning using Python” at NIELIT Virtual Academy</li>
+          <li>Built multiple dashboards & predictive models</li>
+        </ul>
+      </div>
+
+      <div class="tab-contents" id="education">
+        <ul class="custom-list">
+          <li>B.Tech in Computer Science (Data Science) - Vardhaman College of Engineering (VCE)</li>
+          <li>Relevant coursework: Machine Learning, Database Systems, Statistics</li>
+        </ul>
+      </div>
+
+      <!-- Mobile Dropdown Version -->
+      <div class="about-mobile-dropdowns">
+        <details>
+          <summary>Achievements</summary>
+          <div class="dropdown-content">
+            <ul class="custom-list">
+              <li>Winner of Datahack hackathon conducted by VCE 2025</li>
+              <li>Organized “Ideathon” for Festronix 2024</li>
+              <li>Held positions such as Event Organizer and Class Representative.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>Experience</summary>
+          <div class="dropdown-content">
+            <ul class="custom-list">
+              <li>Online Intern in AI & ML using Python at NIELIT</li>
+              <li>Built multiple dashboards & predictive models</li>
+            </ul>
+          </div>
+        </details>
+
+        <details>
+          <summary>Education</summary>
+          <div class="dropdown-content">
+            <ul class="custom-list">
+              <li>B.Tech in Computer Science (Data Science) - VCE</li>
+              <li>Relevant coursework: Machine Learning, Database Systems, Statistics</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Projects Section -->
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="work-list">
+
+      <div class="work">
+        <img src="images/work-1.png">
+        <div class="layer">
+          <h3>Ecobot</h3>
+          <p>Developed a web application that detects plastic objects in water bodies using YOLOv8 ML model</p>
+          <a href="https://github.com/abhiramavisa/ecobot" target="_blank" rel="noopener noreferrer" class="read-more-btn">
+            Read More <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-2.png">
+        <div class="layer">
+          <h3>ParkiFy</h3>
+          <p>Created a voice-based Parkinson’s detection system using ML, deployed via an interactive web interface.</p>
+          <a href="https://github.com/yourusername/parkify-repo" target="_blank" rel="noopener noreferrer" class="read-more-btn">
+            Read More <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/work-3.png">
+        <div class="layer">
+          <h3>Startup Revenue Forecasting.</h3>
+          <p>Illustrates a startup's financial growth by tracking increasing revenues and expense rounds over time.</p>
+          <a href="https://github.com/yourusername/revenue-forecasting-repo" target="_blank" rel="noopener noreferrer" class="read-more-btn">
+            Read More <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="btn-container">
+      <a href="https://github.com/abhiramavisa?tab=repositories" class="btn" target="_blank" rel="noopener noreferrer">See more</a>
+    </div>
+  </div>
+</div>
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Skills</h1>
+    <div class="services-list">
+      <div>
+        <i class="fas fa-laptop-code"></i>
+        <p>
+          <strong>Languages:</strong> Python, Java, c.<br>
+          <strong>Web Technologies:</strong> JavaScript, HTML, CSS.
+        </p>
+      </div>
+      <div>
+        <i class="fas fa-toolbox"></i>
+        <p>
+          <strong>Libraries:</strong> NumPy, Matplotlib, Pandas, Scikit-learn<br>
+          <strong>Development Tools:</strong> Git, VS Code.
+        </p>
+      </div>
+      <div>
+        <i class="fas fa-chart-bar"></i>
+        <p>
+          <strong>Tools:</strong> Tableau, Power BI<br>
+          <strong>Databases:</strong> MySQL
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="contact-content" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+  <h2 style="font-size: 42px; margin-bottom: 20px;">Contact Me</h2>
+
+  <p style="font-size: 20px; margin-bottom: 10px;">
+    <i class="fas fa-paper-plane" style="color: #ff004f; margin-right: 10px;"></i>
+    <a href="mailto:abhiramavisa8@gmail.com" style="color: white; text-decoration: none;">
+      abhiramavisa8@gmail.com
+    </a>
+  </p>
+
+  <p style="font-size: 20px; margin-bottom: 20px;">
+    <i class="fas fa-phone-alt" style="color: #ff004f; margin-right: 10px;"></i>
+    <a href="tel:+919063925506" style="color: white; text-decoration: none;">
+      +91 9063925506
+    </a>
+  </p>
+
+  <div class="social-icons" style="justify-content: center; margin: 30px 0;">
+    <a href="https://www.linkedin.com/in/abhiramavisa/" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/abhiramavisa" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://instagram.com/abhiram.avisa" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <a href="my-resume.pdf" download class="btn" style="margin-top: 10px; margin-bottom: 40px;">Download Resume</a>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Close mobile menu when clicking a link
+  document.querySelectorAll('#nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('nav-links').classList.remove('show');
+    });
+  });
+</script>
+</body>
+</html>
